@@ -9,44 +9,14 @@
 		<meta name="robots" content="index, follow" />
 		<meta name="format-detection" content="telephone=no" />
 		<link rel="stylesheet" href="css/styles.css" />
-		
-		<!--
-		<link rel="apple-touch-icon-precomposed" href="/images/appletouchicon.png" />
-		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-		<link rel="stylesheet" href="/reset.css" />
-		-->
 	</head>
 	<body>
-		<div id="wrapper">
-			<h1>Work in progress</h1>
-			<p>Our website is temporarily closed for maintenance. It should reopen shortly.</p>
+		<div class="wrapper">
+			<div class="container">
+				<i class="fa fa-exclamation-triangle"></i>
+				<h1>Work in progress</h1>
+				<p>Our website is temporarily closed for maintenance. It should reopen shortly.</p>
+			</div>
 		</div>
-		
-		<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
-		
-		<!--
-		<script src="scripts.js"></script>
-		-->
-		
-		<script>
-			var $func = {
-				selectors: {
-					h1: $('h1')
-				},
-				colors: {
-					gray: '#666'
-				},
-				init: function(){					
-					$s = this.selectors;
-					$c = this.colors;
-					
-					$s.h1.css({ color: $c.gray });
-				}
-			};
-			
-			$(function(){
-				$func.init();
-			});		
-		</script>
 	</body>
 </html>

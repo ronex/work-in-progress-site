@@ -1,12 +1,11 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
 @import 'reset';
 
 
-/* Font
-================================================== */
-
+// Font
 body, p, td, div, span{
 	font-family: Helvetica, Arial, sans-serif;
-	color: #333;
+	color: #666;
 	font-size: 18px;
 	line-height: 1.4;
 }
@@ -15,28 +14,22 @@ h1, h2, h3, h4{
 	line-height: 1.2;
 }
 
-
 h1{
 	font-size: 38px;
-	margin: 0 0 10px 0;
+	margin: 10px 0;
 }
 
 h2{
 	font-size: 24px;
-	margin: 0 0 20px 0;
+	margin: 20px 0;
 }
 
-/* Basics
-================================================== */
+// Basics
 					
 body *{
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	outline: none;
-}
-
-body{
-	margin: 80px 10%;
 }
 
 b, strong{
@@ -52,7 +45,7 @@ a{
 }
 
 p{
-	margin-bottom: 20px;
+	margin: 10px 0;
 }
 
 img{
@@ -60,16 +53,27 @@ img{
 	height: auto;
 }
 
-/* Specific
-================================================== */
+// Specifics
 
-#wrapper{
-	max-width: 600px;
-	margin: 0 auto;
-	text-align: center;
+html, body{
+	height: 100%;
 }
 
-/* Responsive
-================================================== */
-
-@media (max-width: 600px){}
+.wrapper{
+	display: table;
+	width: 100%;
+	height: 100%;
+	background: #eee;
+	
+	.container{
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		padding: 10%;
+		
+		.fa-exclamation-triangle{
+			font-size: 200px;
+			color: #e5b982;
+		}
+	}	
+}
